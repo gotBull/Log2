@@ -19,14 +19,12 @@
     %>
     <body >
         <h1>海塔生物科技</h1>
-        <a href="MemberLogin.jsp">會員登入</a>
+        <a href="MemberLogin.jsp">顧客登入</a>
         <div>
             <p>瀏覽器版本:<br> <%= request.getHeader("User-Agent") %></p><br> 
             <p>瀏覽器語言:<br> <%= request.getHeader("Accept-Language") %></p><br>
             <p>使用者IP: <br><%= request.getLocalAddr() %></p><br>
             <p>使用者瀏覽器:<br> <%= request.getRemoteAddr() %></p>
-
-          
         </div>
     </body>
 </html>
