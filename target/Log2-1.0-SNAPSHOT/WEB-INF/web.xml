@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>HentaServlet</servlet-name>
+        <servlet-class>HentaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HentaServlet2</servlet-name>
+        <servlet-class>com.mycompany.log2.HentaServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HentaServlet</servlet-name>
+        <url-pattern>/HentaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HentaServlet2</servlet-name>
+        <url-pattern>/HentaServlet2</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            1
+        </session-timeout>
+    </session-config>
+</web-app>
